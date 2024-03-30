@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lat_cap"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:padding="5sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/lng_cap"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longtitude:"
+        android:padding="5sp"
+        android:layout_below="@+id/lat_cap"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/lat"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111"
+        android:padding="5sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/lat_cap"
+        />
+    <TextView
+        android:id="@+id/lng"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="222"
+        android:padding="5sp"
+        android:layout_below="@+id/lat"
+        android:layout_toRightOf="@id/lng_cap"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lng_cap"
+        android:id="@+id/updButton"
+        android:text="Update coordinates" />
+
+</RelativeLayout>
